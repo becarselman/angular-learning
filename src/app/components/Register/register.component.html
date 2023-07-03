@@ -1,0 +1,28 @@
+<div class="login-wrapper">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+       
+
+        <div class="input-section">
+            <input placeholder="First Name" id="firstName" type="text" formControlName="firstName">
+        </div>
+        <div class="input-section">
+            <input placeholder="Last Name" id="lastName" type="text" formControlName="lastName">
+        </div>
+
+        <div class="input-section">
+        
+            <input placeholder="Email" id="email" type="text" formControlName="email">
+        </div>
+       
+        <div class="input-section">
+            <input placeholder="Password" id="password" type="password" formControlName="password">
+        </div>
+        <div class="input-section">
+            <input placeholder="Confirm Password" id="confirmPassword" type="password" formControlName="confirmPassword">
+        </div>
+
+        <button class="login-button" type="submit">Register</button>
+
+    </form>
+</div>
